@@ -14,17 +14,12 @@ logger = logging.getLogger(__name__)
 
 
 class DataExplorer:
-    """A class for comprehensive exploratory data analysis."""
+    """A class for exploratory data analysis."""
     
     @staticmethod
     def explore_dataframe(df: pd.DataFrame, target: Optional[str] = None, max_cat_cardinality: int = 20) -> None:
         """
-        Comprehensive EDA function for any dataframe.
-        
-        Args:
-            df: DataFrame to explore
-            target: Target variable column name
-            max_cat_cardinality: Max unique values for categorical analysis
+        Data Analysis function for any dataframe.
         """
         logger.info("Starting comprehensive data exploration")
         
